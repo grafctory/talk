@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "version": "0.1.0",
+  "description": "Conversational AI access to knowledge graphs.",
+  "keywords": [
+    "typescript",
+    "knowledge-graph",
+    "mcp",
+    "ai",
+    "agents"
+  ],
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "clean": "npm run clean --workspaces && ush rm dist docs node_modules",
+    "prime": "npm ci",
+    "setup": "npm ci && ush ln",
+    "build": "npm run build --workspaces && ush rm docs && npx typedoc",
+    "check": "npm run check --workspaces",
+    "proof": "npm run build && ush ws --open docs"
+  },
+  "devDependencies": {
+    "@grafctory/rack": "^0.8.1",
+    "@types/node": "^25.9.3",
+    "typedoc": "^0.28.18",
+    "vitest": "^4.1.12"
+  },
+  "allowScripts": {
+    "fsevents@2.3.3": true
+  }
+}

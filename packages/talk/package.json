@@ -1,0 +1,56 @@
+{
+  "name": "@grafctory/talk",
+  "version": "0.1.0",
+  "description": "MCP servers for conversational AI access to knowledge graphs.",
+  "keywords": [
+    "typescript",
+    "knowledge-graph",
+    "mcp",
+    "ai",
+    "agents"
+  ],
+  "homepage": "https://grafctory.github.io/talk/",
+  "bugs": {
+    "url": "https://github.com/grafctory/talk/issues",
+    "email": "info@metreeca.com"
+  },
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Metreeca",
+    "email": "info@metreeca.com",
+    "url": "https://www.metreeca.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grafctory/talk.git",
+    "directory": "packages/talk"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "@grafctory/source": "./src/index.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "README.md",
+    "LICENSE",
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22.22.0"
+  },
+  "scripts": {
+    "clean": "ush rm dist docs node_modules",
+    "build": "ush rm dist && tsc -p tsconfig.build.json",
+    "check": "npx vitest --typecheck run"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^25.9.3",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.12"
+  },
+  "peerDependencies": null
+}

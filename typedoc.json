@@ -1,0 +1,50 @@
+{
+  "entryPoints": [
+    "packages/*"
+  ],
+  "entryPointStrategy": "packages",
+  "name": "@grafctory/talk",
+  "out": "docs",
+  "readme": "README.md",
+  "hostedBaseUrl": "https://grafctory.github.io/talk/",
+  "useFirstParagraphOfCommentAsSummary": true,
+  "favicon": "https://www.metreeca.com/200.svg",
+  "sourceLinkExternal": true,
+  "markdownLinkExternal": true,
+  "externalSymbolLinkMappings": {
+    "global": {
+      "Error": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+      "RangeError": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+      "TypeError": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError"
+    }
+  },
+  "navigationLinks": {
+    "GitHub": "https://github.com/grafctory/talk"
+  },
+  "githubPages": false,
+  "hideGenerator": true,
+  "customFooterHtml": "<a href='https://www.metreeca.com/' style='display: flex; align-items: center; gap: 0.25em'><img src='https://www.metreeca.com/200.svg' alt='Metreeca' style='width: 1.25em; height: 1.25em;'/><span>Copyright © 2026 Metreeca · Grafctory™ is a trademark of Metreeca srl</span></a>",
+  "headings": {
+    "readme": false
+  },
+  "highlightLanguages": [
+    "shell",
+    "typescript"
+  ],
+  "packageOptions": {
+    "tsconfig": "./tsconfig.build.json",
+    "includeVersion": true,
+    "excludeExternals": true,
+    "sortEntryPoints": false,
+    "sort": [
+      "source-order"
+    ],
+    "categorizeByGroup": true,
+    "groupOrder": [
+      "Variables",
+      "Interfaces",
+      "Type Aliases",
+      "*"
+    ]
+  }
+}

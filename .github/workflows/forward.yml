@@ -1,0 +1,18 @@
+name: Forward
+
+on:
+  issues:
+    types: [ opened, reopened, transferred ]
+  pull_request:
+    types: [ opened, reopened ]
+
+permissions: {}
+
+jobs:
+
+  forward:
+
+    uses: grafctory/.github/.github/workflows/forward.yml@main
+    with:
+      project-url: https://github.com/orgs/grafctory/projects/1
+    secrets: inherit
